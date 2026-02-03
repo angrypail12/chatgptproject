@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Page title shown in the browser tab -->
+    <title>Color Toggle Page</title>
+
+    <!-- CSS: controls how the page looks -->
+    <style>
+        /* Page-wide styles */
+        body {
+            background-color: white;   /* Start with light background */
+            color: black;              /* Start with dark text */
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding-top: 50px;
+
+            /* Smooth color changes */
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        /* Button styles */
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Main heading -->
+    <h1>Light / Dark Mode Toggle</h1>
+
+    <!-- Instructions for the user -->
+    <p>Click the button to switch between light and dark mode.</p>
+
+    <!-- Button that triggers JavaScript -->
+    <button onclick="togglePageColors()">Toggle Colors</button>
+
+    <!-- 
+        Link to external JavaScript file
+        This loads script.js after the page content
+    -->
+    <script src="script.js"></script>
+
+</body>
+</html>
